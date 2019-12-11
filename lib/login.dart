@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import 'home.dart';
+import 'home.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -57,7 +57,7 @@ class LoginScreenState extends State<LoginScreen> {
                         decoration: InputDecoration(
                         border: InputBorder.none,
                         hintStyle: TextStyle(color: Colors.grey.withOpacity(.8)),
-                        hintText: "Contraseñaaa",
+                        hintText: "Contraseña",
                       ),
                     ),
                   ),
@@ -80,7 +80,7 @@ class LoginScreenState extends State<LoginScreen> {
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                     onPressed: (){
 
-                      // return Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                      return Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
 
                       // if (email. == "franz_tj_@hotmail.com" && pass == "123456") {
                       //   // print(email);
