@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
+// import 'home.dart';
+
 class LoginScreen extends StatefulWidget {
   @override
   LoginScreenState createState() => LoginScreenState();
 }
 
 class LoginScreenState extends State<LoginScreen> {
+
+  String email, pass;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,21 +41,23 @@ class LoginScreenState extends State<LoginScreen> {
                       border: Border(bottom: BorderSide(color: Colors.grey[300]))
                     ),
                     child: TextField(
-                      decoration: InputDecoration(
+                        // onSaved: (value) => email = value,
+                        decoration: InputDecoration(
                         border: InputBorder.none,
                         hintStyle: TextStyle(color: Colors.grey.withOpacity(.8)),
                         hintText: "Nombre de Usuario o Email"
                       ),
                     ),
-                  ),
+                  ),                  
                   Container(
                     decoration: BoxDecoration(
                     ),
                     child: TextField(
-                      decoration: InputDecoration(
+                        // onSaved: (value) => pass = value,
+                        decoration: InputDecoration(
                         border: InputBorder.none,
                         hintStyle: TextStyle(color: Colors.grey.withOpacity(.8)),
-                        hintText: "Contraseña"
+                        hintText: "Contraseñaaa",
                       ),
                     ),
                   ),
@@ -72,7 +79,24 @@ class LoginScreenState extends State<LoginScreen> {
                     child: Text("INICIAR SESION", style: TextStyle(fontSize: 15.0), textAlign: TextAlign.center,),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                     onPressed: (){
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+
+                      // return Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+
+                      // if (email. == "franz_tj_@hotmail.com" && pass == "123456") {
+                      //   // print(email);
+                      //   return Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+                      // } else { 
+                      //   return AlertDialog(
+                      //     title: Text('Rewind and remember'),
+                      //     content: SingleChildScrollView(
+                      //       child: ListBody(
+                      //         children: <Widget>[
+                      //           Text('Nombre de Usuario o Contraseña Incorrectos'),
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   );
+                      // }
                     },
                 ),
               ),
